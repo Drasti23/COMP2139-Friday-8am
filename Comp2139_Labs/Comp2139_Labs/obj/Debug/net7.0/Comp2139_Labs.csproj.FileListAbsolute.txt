@@ -60,3 +60,14 @@
 /Users/drastiparikh/Sem4/COMP 2139/Comp2139_Labs/Comp2139_Labs/obj/Debug/net7.0/Comp2139_Labs.pdb
 /Users/drastiparikh/Sem4/COMP 2139/Comp2139_Labs/Comp2139_Labs/obj/Debug/net7.0/Comp2139_Labs.genruntimeconfig.cache
 /Users/drastiparikh/Sem4/COMP 2139/Comp2139_Labs/Comp2139_Labs/obj/Debug/net7.0/ref/Comp2139_Labs.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Humanizer.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/MySqlConnector.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/bin/Debug/net7.0/System.CodeDom.dll
+/Users/drastiparikh/Sem4/COMP 2139/COMP2139-Friday-8am/Comp2139_Labs/Comp2139_Labs/obj/Debug/net7.0/Comp2139_Labs.csproj.CopyComplete
