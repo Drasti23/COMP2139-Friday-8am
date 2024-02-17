@@ -2,12 +2,15 @@
 @{
     // Razor Block
     ViewData["Title"] = "Projects";
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
 }
 
-<h2>Projects</h2>
+<h2>@ViewData["Title"]</h2>
+<a asp-controller="Project" asp-action="Create" class="btn btn-primary">Create</a>
 
 @if (Model.Any())
-{
+    {
 
 
     <table class="table">
@@ -16,29 +19,39 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Action</th> <!--Columns for Actions like Details, Edits and delete-->
             </tr>
         </thead>
         <tbody>
             @foreach (var project in Model)
-            {
+                {
                 <tr>
                     <td>@project.ProjectId</td>
                     <td>@project.Name</td>
                     <td>@project.Description</td>
                     <td>
-                        <a asp-action="Delete" class="btn btn-warning">Delete</a>
-                        <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-light">Info</a>
+                        <a asp-controller="Project" asp-action="Details" asp-route-id ="@project.ProjectId" class="btn btn-info">Details</a>
+                        <a asp-controller="Project" asp-action="Edit" asp-route-id ="@project.ProjectId" class="btn btn-secondary">Edit</a>
+                        <a asp-controller="Project" asp-action="Delete" asp-route-id ="@project.ProjectId" class="btn btn-danger">Delete</a>
+                       
                     </td>
                 </tr>
-            }
+                }
         </tbody>
 
 
     </table>
-    <a asp-action="Create" class="btn btn-primary">Add</a>
+    
+    }
+    else
+    {
+        if (searchPerformed)
+        {
+                <p>No Project found with name or descripiton "@searchString" in database</p>
+        }
 
-}
-else
-{
-    <p>No Projects avialable</p>
-}
+        else
+        {
+                <p>No Projects available</p>
+            }
+     }

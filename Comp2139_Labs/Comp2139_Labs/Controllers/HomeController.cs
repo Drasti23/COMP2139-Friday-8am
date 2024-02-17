@@ -24,9 +24,31 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult GeneralSearch(string searchType, string searchString)
+    {
+        if(searchType == "Projects")
+        {
+            return RedirectToAction("Search", "Project", new { searchString });
+        }
+        else if(searchType == "Tasks")
+        {
+            return RedirectToAction("Search", "Tasks", new { searchString });
+        }
+        return RedirectToAction("Index", "Home");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    public IActionResult NotFound(int statusCode)
+    {
+        if(statusCode == 404)
+        {
+            return View("Not FOund");
+        }
+        return View("Error");
     }
 }
