@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using COMP2139_Labs.Areas.ProjectManagement.Models
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+
+
+@{
+    var name="Drasti Parikh";
+    var studentNumber = "101419828";
+    var courseCode = "Comp2139";
+}
+
+<!DOCTYPE>
+<html>
+
+    <head>
+        <title>Welcome to my About Page</title>
+    </head>
+    <body>
+    <div class="card" style="width: 18rem; align:center;">
+        @if (UserManager.GetUserAsync(User).Result.ProfilePic != null)
+        {
+            <img id="profilePicture" style=" height:350px, object-fit:cover"
+                 src="data:image/;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.ProfilePic))" />
+        }
+        <div class="card-body">
+            <h5 class="card-title">@name</h5>
+            <p class="card-text">I am currently studying in 4th Sem.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Student Id:@studentNumber</li>
+            <li class="list-group-item">Course:@courseCode</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a asp-controller="Project" asp-action="Index" class="card-link">My Projects</a>
+            <a asp-action="Index" class="card-link">Home</a>
+        </div>
+    </div>
+        
+    </body>
+</html>
